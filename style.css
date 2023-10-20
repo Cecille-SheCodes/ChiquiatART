@@ -3,6 +3,8 @@
   --default-font-family: "Poppins", sans-serif;
   --primary-color: #E2DDE3;
   --secondary-color: #252118;
+  --tertiary-color:goldenrod;
+
 }
 
 
@@ -12,7 +14,7 @@ body{
 .main-background{
    background-image: url(/images/BW\ Profile\ Pic.png); 
    background-size: 101%;
-   background-repeat:no no-repeat;
+   background-repeat:no-repeat;
     margin: 30px auto;
     border-radius: 10px;
 }
@@ -26,37 +28,91 @@ body{
     color: var(--primary-color)!important;
 
 }
-
+.gallery-name{
+padding:15px 30px;
+text-align: center;
+}
 h1{
-    font-size:90px;
+    font-size:100px;
     color:var(--primary-color);
-
+}
+#chiquiat{
+padding-top:20px;
+ font-family:  'Shalimar', cursive;
+ font-size: 110px;
+ font-weight:500px;
+ color:var(--tertiary-color);
 }
 
-.enter-btn{
-    margin: 150px auto auto auto;
+
+.enter-btn1{
+    margin: 430px auto 10px auto;
     text-align: center;
+    display: none;}
 
+.enter-btn2{
+    margin: 100px auto 10px auto;
+    text-align: center;
+    display: block;
 }
-.button-link{
-    padding: 10px 30px;
+
+ @media only screen and (max-width: 240px) and (min-width: 1px) {
+    .enter-btn1 {
+   display: block;
+   margin: 200px auto 10px auto;}
+   h1, #chiquiat{
+    font-size: 45px;
+}
+  }
+  @media only screen and (max-width: 315px) and (min-width: 240px) {
+    .enter-btn1 {
+   display: block;
+   margin: 250px auto 10px auto;}
+   h1{
+    font-size: 55px;
+}
+  }
+
+
+@media only screen and (max-width: 400px) and (min-width: 315px) {
+ 
+  .enter-btn1 {
+   display: block;
+   margin: 320px auto 10px auto;
+  }
+h1{
+    font-size: 75px;
+}}
+
+  @media only screen and (max-width: 766px) and (min-width: 400px) {
+    .enter-btn1 {
+   display: block;
+   margin: 460px auto 10px auto;
+  }
+}
+.button-link, .button-link:hover{
+    padding: 5px 10px 5px 10px;
     border-radius: 10px;
     border-color: var(--primary-color);
-    border-width: 2px;
-    font-weight: 700;
+    border-width: 1px;
+    font-weight: 400;
     color: var(--primary-color)!important;
     text-decoration: none;
 }
 .button-link:hover{
-    padding: 10px 30px;
-    border-radius: 10px;
-    border-color: var(--primary-color);
-    border-width: 2px;
-    font-weight: 700;
-    color: var(--primary-color)!important;
-    text-decoration: none;
-    background-color: rgb(37, 33, 24,0.6);
+       background-color: rgb(37, 33, 24,0.6);
 }
 
+.footer{
+    text-align: center;
+    display: block;
+    margin: 50px auto 10px auto;
+    font: var(--primary-color);
+    font-size: 12px;
+    }
+    .active {
+  font-weight: bolder;
+  color: var(--tertiary-color) !important;
 
+}
 
