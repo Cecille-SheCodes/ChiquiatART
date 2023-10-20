@@ -1,9 +1,62 @@
+:root {
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+  --primary-color: #E2DDE3;
+  --secondary-color: #252118;
+}
+
+
 body{
-    background-color: #252118
+    background-color: var(--secondary-color);
+}
+.main-background{
+   background-image: url(/images/BW\ Profile\ Pic.png); 
+   background-size: 101%;
+   background-repeat:no no-repeat;
+    margin: 30px auto;
+    border-radius: 10px;
+}
 
+.navibar{
+  background-color: none !important;
+  display: flex;
+}
+
+.nav-link{
+    color: var(--primary-color)!important;
 
 }
+
 h1{
-    font-size:400px;
+    font-size:90px;
+    color:var(--primary-color);
 
 }
+
+.enter-btn{
+    margin: 150px auto auto auto;
+    text-align: center;
+
+}
+.button-link{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border-color: var(--primary-color);
+    border-width: 2px;
+    font-weight: 700;
+    color: var(--primary-color)!important;
+    text-decoration: none;
+}
+.button-link:hover{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border-color: var(--primary-color);
+    border-width: 2px;
+    font-weight: 700;
+    color: var(--primary-color)!important;
+    text-decoration: none;
+    background-color: rgb(37, 33, 24,0.6);
+}
+
+
+
