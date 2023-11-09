@@ -1,5 +1,5 @@
 :root {
-  --heading-font-family: "Playfair Display", serif;
+  --heading-font-family: 'Shalimar', cursive;
   --default-font-family: "Poppins", sans-serif;
   --primary-color: rgb(40, 4, 58);
   --secondary-color: rgb(242, 226, 250);
@@ -25,6 +25,7 @@ background-image: url(/images/freepik1.jpg);
    background-size: cover;
    background-repeat: no-repeat;
   border-radius: 10px;
+  max-width:100%
 }
 
 
@@ -37,10 +38,7 @@ background-image: url(/images/freepik1.jpg);
     color: var(--primary-color)!important;
 
 }
-.gallery-name{
-padding:15px 30px;
-text-align: center;
-}
+
 header h2{
     font-size:80px;
     max-width:100%;
@@ -52,10 +50,9 @@ header h2{
 }
 
 #chiquiat{
-
+text-align: center;
  font-family:  'Shalimar', cursive;
  font-size: 450px;
- font-weight:1500px;
 font-stretch: extra-expanded;
 line-height: 0.4;
  color:var(--tertiary-color);
@@ -77,57 +74,79 @@ header p{
   padding: 10px 10px;
   border-radius: 10px;
   box-shadow: 0 5px 8px var(--primary-color);
- 
+   }
 
-  
-}
 
- @media only screen and (max-width: 240px) and (min-width: 1px) {
-    .enter-btn1 {
-   display: block;
-   margin: 200px auto 10px auto;}
-   h1, #chiquiat{
-    font-size: 45px;
-}
-  }
-  @media only screen and (max-width: 315px) and (min-width: 240px) {
-    .enter-btn1 {
-   display: block;
-   margin: 250px auto 10px auto;}
-   h1{
-    font-size: 55px;
+ @media only screen and (max-width: 1175px) and (min-width: 800px) {
+    #chiquiat{
+ font-size: 300px;
 }
   }
 
-
-@media only screen and (max-width: 400px) and (min-width: 315px) {
- 
-  .enter-btn1 {
-   display: block;
-   margin: 320px auto 10px auto;
-  }
-h1{
-    font-size: 75px;
+ @media only screen and (max-width: 800px) and (min-width: 575px) {
+       #chiquiat{
+ font-size: 200px;}
+ header h2{
+    font-size:50px;
 }}
 
-  @media only screen and (max-width: 766px) and (min-width: 400px) {
-    .enter-btn1 {
-   display: block;
-   margin: 460px auto 10px auto;
+ @media only screen and (max-width: 575px) and (min-width: 450px) {
+       #chiquiat{
+ font-size: 160px;}
+ header h2{
+    font-size:40px;
+}}
+
+   @media only screen and (max-width: 450px) and (min-width: 400px) {
+       #chiquiat{
+ font-size: 140px;}
+ header h2{
+    font-size:30px;}
+.link-button{
+    font-size:10px;
+  }}
+
+   @media only screen and (max-width: 400px) and (min-width: 360px) {
+       #chiquiat{
+ font-size: 120px;}
+ header h2{
+    font-size:20px;}
+.link-button{
+    font-size:8px;
+  }}
+
+ @media only screen and (max-width: 360px) and (min-width: 320px) {
+    #chiquiat
+    {font-size: 110px;}
+ header h2{
+    font-size:20px;}
+    .link-button{
+    font-size:8px;
+  }}
+
+ @media only screen and (max-width: 320px) and (min-width: 280px) {
+    #chiquiat
+    {font-size: 95px;}
+ header h2{
+    font-size:20px;}
+    .link-button{
+    font-size:8px;
+  }}
+
+   @media screen and (max-width: 280px)  {
+  
+    #chiquiat{
+      font-size: 70px;
+      font-family:var(--heading-font-family);
   }
-}
-.button-link, .button-link:hover{
-    padding: 5px 10px 5px 10px;
-    border-radius: 10px;
-    border-color: var(--primary-color);
-    border-width: 1px;
-    font-weight: 400;
-    color: var(--primary-color)!important;
-    text-decoration: none;
-}
-.button-link:hover{
-       background-color: rgb(37, 33, 24,0.6);
-}
+ header h2{
+    font-size:15px;
+ }
+    .link-button{
+    font-size:7px;
+    padding:5px;
+  }}
+
 
 footer{
     text-align: center;
@@ -136,10 +155,7 @@ footer{
     font: var(--primary-color);
     font-size: 12px;
     }
-
     .active {
   font-weight: bolder;
-  color: var(--tertiary-color) !important;
-
+  color: goldenrod !important;
 }
-
