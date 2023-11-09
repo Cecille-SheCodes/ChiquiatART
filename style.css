@@ -1,23 +1,32 @@
 :root {
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
-  --primary-color: #E2DDE3;
-  --secondary-color: #252118;
+  --primary-color: rgb(40, 4, 58);
+  --secondary-color: rgb(242, 226, 250);
   --tertiary-color:goldenrod;
 
 }
 
 
 body{
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
-.main-background{
-   background-image: url(/images/BW\ Profile\ Pic.png); 
-   background-size: 101%;
-   background-repeat:no-repeat;
-    margin: 30px auto;
-    border-radius: 10px;
+.container{
+  margin: 30px auto;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  max-width:95%;
+  border-radius:10px;
+ box-shadow: 0 10px 20px 0 rgba(200, 242, 242, 0.2), 0 6px 20px 0 rgba(249, 244, 244, 0.19);
 }
+header{
+padding:20px 20px; 
+background-image: url(/images/freepik1.jpg); 
+   background-size: cover;
+   background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
 
 .navibar{
   background-color: none !important;
@@ -32,28 +41,45 @@ body{
 padding:15px 30px;
 text-align: center;
 }
-h1{
-    font-size:100px;
-    color:var(--primary-color);
+header h2{
+    font-size:80px;
+    max-width:100%;
+    color:var(--secondary-color);
+    text-shadow:  0 10px 20px var(--primary-color);
+    font-family: 'Alfa Slab One', serif;
+    padding-bottom: 5px;
+    text-align: end;
 }
+
 #chiquiat{
-padding-top:20px;
+
  font-family:  'Shalimar', cursive;
- font-size: 110px;
- font-weight:500px;
+ font-size: 450px;
+ font-weight:1500px;
+font-stretch: extra-expanded;
+line-height: 0.4;
  color:var(--tertiary-color);
+ text-shadow: 0 5px 8px var(--primary-color);
 }
 
+header p{
+  text-align: end;
+  margin-top: 30px;
+  display: block;
+   
+}
+.link-button{
+  color: var(--tertiary-color);
+  font-size:12px;
+  text-shadow: 2px 4px 8px var(--secondary-color);
+  text-decoration: none;
+  background-color: rgb(87, 5, 41);
+  padding: 10px 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 8px var(--primary-color);
+ 
 
-.enter-btn1{
-    margin: 430px auto 10px auto;
-    text-align: center;
-    display: none;}
-
-.enter-btn2{
-    margin: 100px auto 10px auto;
-    text-align: center;
-    display: block;
+  
 }
 
  @media only screen and (max-width: 240px) and (min-width: 1px) {
@@ -103,13 +129,14 @@ h1{
        background-color: rgb(37, 33, 24,0.6);
 }
 
-.footer{
+footer{
     text-align: center;
     display: block;
     margin: 50px auto 10px auto;
     font: var(--primary-color);
     font-size: 12px;
     }
+
     .active {
   font-weight: bolder;
   color: var(--tertiary-color) !important;
