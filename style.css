@@ -76,7 +76,24 @@ header p{
   box-shadow: 0 5px 8px var(--primary-color);
    }
 
-
+footer{
+    text-align: center;
+    display: block;
+    margin: 50px auto 10px auto;
+    font: var(--primary-color);
+    font-size: 12px;
+    }
+    .active {
+  font-weight: bolder;
+  color: goldenrod !important;
+}
+ 
+main h3{
+  padding:60px 20px 20px 20px;
+  font-family: var(--default-font-family);
+  color: rgb(87, 5, 41);
+  text-shadow:  0 10px 20px var(--secondary-color);
+}
  @media only screen and (max-width: 1175px) and (min-width: 800px) {
     #chiquiat{
  font-size: 300px;
@@ -148,14 +165,3 @@ header p{
   }}
 
 
-footer{
-    text-align: center;
-    display: block;
-    margin: 50px auto 10px auto;
-    font: var(--primary-color);
-    font-size: 12px;
-    }
-    .active {
-  font-weight: bolder;
-  color: goldenrod !important;
-}
