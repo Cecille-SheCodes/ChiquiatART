@@ -137,7 +137,8 @@ main h3{
 
   .row-background{
   background-color:rgb(98, 5, 73);
-  padding: 10px;
+  margin: 20px auto;
+  padding: 20px;
   max-width:95%;
   border-radius:10px;
  box-shadow: 0 10px 20px 0 rgba(200, 242, 242, 0.2), 0 6px 20px 0 rgba(249, 244, 244, 0.19);
